@@ -46,12 +46,11 @@ body {
     background-color: var(--blue-dark);
     color: var(--text-black);
 }
-
-.main-content {
-    flex:1;
+.main-content{
+    flex: 1;
 }
 
-.main-header {
+.main-header{
     background-color: var(--cream);
     border-radius: 32px;
     display: flex;
@@ -59,4 +58,59 @@ body {
     align-items: center;
     padding: 32px;
     margin: 32px;
+    position: relative;
+}
+
+.nav-link{
+    font-size: var(--f-u-6);
+    font-weight: 800;
+    text-decoration: none;
+    color: var(--text-black);
+    transition: border 0.3s ease-in-out;
+}
+.nav-link.active,
+.nav-link:hover
+{
+    border-bottom: 8px solid var(--text-black);
+}
+.desktop-nav{
+    display: flex;
+    gap: 32px;
+}
+
+.logo{
+    position: absolute;
+    left: 32px;
+    top: 16px;
+}
+
+.header {
+    text-align: center;
+    text-decoration: underline;
+}
+.para {
+    text-align: center;
+}
+
+.contain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.div1, .div2 {
+    border: 1px solid black;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+}
+
+.div3 {
+    border: 1px solid black;
+    width: 615px;
+    height: 200px;
+    display: flex;
+    margin-left: 110px;
+    text-align: center;
 }
