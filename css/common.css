@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
-* {
+*{   
     margin: 0;
     box-sizing: border-box;
 }
-
+ 
 body {
     /* VARIABLES */
     /*Colors*/
@@ -12,15 +11,14 @@ body {
     --text-black: #030303;
     --text-white: #FFFFFF;
     --yellow: #FBD725;
-    --blue-light: #90B7BF;
-    --blue-dark: #67A1BC;
+    --blue-light:  #67A1BC;
     --red: #9F2123;
-
+ 
     /*Shadows*/
     --card-shadow: 0px 16px 64px 0px rgba(0, 0, 0, 0.25);
     --card-blue-shadow: 0px 32px 50px 0px rgba(6, 63, 86, 0.5);
     --text-shadow: 0px 4px 8px rgba(6, 63, 86, 0.5);
-
+ 
     /*Font Sizes*/
     --f-base: 1rem;
     --f-u-1: 1.06rem;
@@ -29,17 +27,17 @@ body {
     --f-u-4: 1.31rem;
     --f-u-5: 1.38rem;
     --f-u-6: 1.5rem;
-
+ 
     --f-d-1: 0.94rem;
     --f-d-2: 0.88rem;
     --f-d-3: 0.81rem;
-
+ 
     /* font */
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-
+ 
     min-height: 100dvh;
     display: flex;
     flex-direction: column;
@@ -49,7 +47,7 @@ body {
 .main-content{
     flex: 1;
 }
-
+ 
 .main-header{
     background-color: var(--cream);
     border-radius: 32px;
@@ -60,7 +58,7 @@ body {
     margin: 32px;
     position: relative;
 }
-
+ 
 .nav-link{
     font-size: var(--f-u-6);
     font-weight: 800;
@@ -77,40 +75,9 @@ body {
     display: flex;
     gap: 32px;
 }
-
+ 
 .logo{
     position: absolute;
     left: 32px;
     top: 16px;
-}
-
-.header {
-    text-align: center;
-    text-decoration: underline;
-}
-.para {
-    text-align: center;
-}
-
-.contain {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-}
-
-.div1, .div2 {
-    border: 1px solid black;
-    width: 300px;
-    height: 200px;
-    text-align: center;
-}
-
-.div3 {
-    border: 1px solid black;
-    width: 615px;
-    height: 200px;
-    display: flex;
-    margin-left: 110px;
-    text-align: center;
 }
