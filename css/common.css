@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-*{   
+
+* {
     margin: 0;
     box-sizing: border-box;
 }
- 
+
 body {
     /* VARIABLES */
     /*Colors*/
@@ -11,14 +12,14 @@ body {
     --text-black: #030303;
     --text-white: #FFFFFF;
     --yellow: #FBD725;
-    --blue-light:  #67A1BC;
+    --blue-light: #67A1BC;
     --red: #9F2123;
- 
+
     /*Shadows*/
     --card-shadow: 0px 16px 64px 0px rgba(0, 0, 0, 0.25);
     --card-blue-shadow: 0px 32px 50px 0px rgba(6, 63, 86, 0.5);
     --text-shadow: 0px 4px 8px rgba(6, 63, 86, 0.5);
- 
+
     /*Font Sizes*/
     --f-base: 1rem;
     --f-u-1: 1.06rem;
@@ -27,28 +28,29 @@ body {
     --f-u-4: 1.31rem;
     --f-u-5: 1.38rem;
     --f-u-6: 1.5rem;
- 
+
     --f-d-1: 0.94rem;
     --f-d-2: 0.88rem;
     --f-d-3: 0.81rem;
- 
+
     /* font */
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
- 
+
     min-height: 100dvh;
     display: flex;
     flex-direction: column;
     background-color: var(--blue-dark);
     color: var(--text-black);
 }
-.main-content{
+
+.main-content {
     flex: 1;
 }
- 
-.main-header{
+
+.main-header {
     background-color: var(--cream);
     border-radius: 32px;
     display: flex;
@@ -58,26 +60,126 @@ body {
     margin: 32px;
     position: relative;
 }
- 
-.nav-link{
+
+.nav-link {
     font-size: var(--f-u-6);
     font-weight: 800;
     text-decoration: none;
     color: var(--text-black);
     transition: border 0.3s ease-in-out;
 }
+
 .nav-link.active,
-.nav-link:hover
-{
+.nav-link:hover {
     border-bottom: 8px solid var(--text-black);
 }
-.desktop-nav{
+
+.desktop-nav {
     display: flex;
     gap: 32px;
 }
- 
-.logo{
+
+.logo {
     position: absolute;
     left: 32px;
+    top: 16px;
+}
+
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    /* background-color: var(--blue-light); */
+    background-image: url("../assets/footer_bg.png");
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: center;
+    min-height: 300px;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    padding: 40px;
+    background-color: rgba(75, 72, 72, 0.85);
+    color: #cfcfcf;
+    border-top: 2px solid #a18b0b;
+    width: 900px;
+    max-width: 95%;
+    text-align: left;
+
+}
+
+
+.footer-column {
+    flex: 1;
+    margin: 0 20px;
+}
+
+
+.image2 {
+    filter: blur(2px);
+    opacity: 0.9;
+    transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.image2:hover {
+    filter: blur(0);
+    opacity: 1;
+}
+
+
+.newsletter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.newsletter .input {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    width: 60%;
+}
+
+.newsletter .subscribe-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #a18b0b;
+    color: white;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.highlight {
+    color: #a18b0b;
+    font-weight: bold;
+}
+
+.cloud-section {
+    background: #67A1BC;
+    background: linear-gradient(180deg, rgba(103, 161, 188, 1) 0%, rgba(144, 183, 191, 1) 100%);
+    position: relative;
+}
+
+.cloud {
+    position: absolute;
+}
+
+.cloud.left {
+    top: 5px;
+    left: 0;
+}
+
+.cloud.right {
+    right: 0;
+    top: 32px;
+}
+.cloud.small {
+    left: 33%;
     top: 16px;
 }
